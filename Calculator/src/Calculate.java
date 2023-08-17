@@ -3,8 +3,13 @@ public class Calculate {
         int x = Integer.parseInt(args[1]);
         int y = Integer.parseInt(args[2]);
 
-        sum(x, y);
-        minus(x, y);
+        if (args[0].equals("sum")) {
+            sum(x, y);
+        } else if (args[0].equals("minus")) {
+            minus(y, x);
+        } else {
+            System.out.println("Not operator method");
+        }
 
     }
 
