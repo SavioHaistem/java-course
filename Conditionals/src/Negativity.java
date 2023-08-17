@@ -3,14 +3,10 @@ public class Negativity {
     public static void main(String[] args) {
         int currentNumber = Integer.parseInt(args[0]);
 
-        checkAndConvertNumber(currentNumber);
+        System.out.println(checkAndConvertNumber(currentNumber));
     }
 
-    static void checkAndConvertNumber(int x) {
-        if (x > 0) {
-            System.out.println( x - (x * 2));
-        } else {
-            System.out.println(x);
-        }
+    static int checkAndConvertNumber(int x) {
+        return (x > 0) ? -x : x;
     }
 }
